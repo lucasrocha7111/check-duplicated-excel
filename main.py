@@ -48,7 +48,6 @@ if args_size > 0:
             obj = sheet.cell(line, row)
             field = {"row": row, "value": obj.value}
             line_obj["rows"].append(field)
-            # print(field)
         is_duplicated = check_is_duplicated(line_obj, temp_array_of_values)
         line_obj["duplicated"] = is_duplicated
         temp_array_of_values.append(line_obj)
@@ -56,6 +55,3 @@ if args_size > 0:
     showResults(temp_array_of_values)
 else:
     print("Use a valid argument")
-
- # /Users/lucasrocha/Documents/Pasta\ de\ trabalho.xlsx
- # /Users/lucasrocha/Documents/excell.xlsx
